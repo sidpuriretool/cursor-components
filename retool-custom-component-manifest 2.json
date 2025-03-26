@@ -1,0 +1,53 @@
+{
+  "customComponentSupportVersion": "2",
+  "components": {
+    "LayerVisualizationComponent": {
+      "name": "Layer Visualization Component",
+      "model": [
+        {
+          "name": "data",
+          "initialValue": {
+            "instances": [
+              {
+                "name": "Company Instance",
+                "spaces": [
+                  {
+                    "name": "Finance",
+                    "permissions": [
+                      {
+                        "name": "View",
+                        "type": "read"
+                      },
+                      {
+                        "name": "Edit",
+                        "type": "write"
+                      },
+                      {
+                        "name": "Admin",
+                        "type": "admin"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "object"
+        },
+        {
+          "name": "width",
+          "initialValue": 800,
+          "type": "number"
+        },
+        {
+          "name": "height",
+          "initialValue": 600,
+          "type": "number"
+        }
+      ],
+      "events": [],
+      "defaultHeight": 5,
+      "defaultWidth": 2
+    }
+  }
+}
